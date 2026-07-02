@@ -1,0 +1,75 @@
+@import "colors/gruvbox-material.css";
+
+* {
+    background: transparent;
+    all: unset;
+    font-family: "Iosevka Nerd Font Propo", monospace;
+}
+
+
+window#waybar > box {
+    background-color: @bg0;
+    color: @fg1;
+    border-radius: 0 0 10px 10px;
+
+}
+
+#workspaces {
+    min-width: 100px;
+    font-size: 0.4rem;
+    padding: 2px 4px;
+    margin: 11px 0;
+    border-radius: 99px;
+
+}
+
+#workspaces button {
+    background-color: @bg4;
+    color: transparent;
+    padding: 0px 5px;
+    border-radius: 99px;
+    margin: 0 2px;
+    min-width: 4px;
+}
+
+#workspaces button.active {
+    background-color: @blue;
+    min-width: 1.2rem;
+    transition: 0.5s;
+}
+
+#clock,
+#clock#right {
+    margin: 0 15px;
+    font-weight: 700;
+    font-size: 1.12rem;
+}
+
+.modules-left {
+    margin: 8px;
+}
+.modules-right {
+    margin: 8px;
+}
+
+#cava {
+    margin: 0 8px;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+#network {
+    padding: 0 10px;
+}
+
+#bluetooth {
+    padding: 0 10px;
+    color: @fg1;
+}
+
+#bluetooth.disabled {
+    color: #45475a;
+}
+
+#bluetooth.connected {
+    color: @fg1; /* Green color when connected */
+}
